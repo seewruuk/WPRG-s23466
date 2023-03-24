@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <?php
+    echo "Zadanie 1 <br/>";
+    echo rand(1, 6);
+    ?>
 
 </body>
 

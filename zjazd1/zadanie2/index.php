@@ -9,10 +9,12 @@
 </head>
 
 <body>
-    <?php
-    echo "Zadanie 2 <br/>";
-    
-    ?>
+<?php
+	echo "Zadanie 2 <br/>";
+	$promien = 5;
+    $wynik = $promien*2;
+    echo "Srednica: ".$wynik ;
+?>
 
 </body>
 

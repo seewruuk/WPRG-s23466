@@ -10,9 +10,6 @@ for($i = 0; $i<10; $i++){
 }
 echo "\n";
 
-
-
-
 do{
     echo "Podaj wartosc od 0 do 10"."\n";
     $szukana_wartosc = readline("Podaj wartosc: ");
@@ -20,7 +17,5 @@ do{
 
 echo "Szukana wartosc: ".$array[$szukana_wartosc];
 
-
-// echo rand(5, 15);
 
 ?>

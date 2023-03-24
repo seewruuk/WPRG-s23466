@@ -1,20 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 1.5</title>
-</head>
-
-<body>
 <?php
 
-	
-  
+$typ_figury = readline("Podaj typ figury (trojkat, prostokat, trapez): ");
+
+$bok_a = 0;
+$bok_b = 0;
+$wysokosc = 0;
+$pole = 0;
+
+switch($typ_figury){
+    case "trojkat" : $pole = trojkat(); break;
+    case "prostokat" : $pole = prostokat(); break;
+    case "trapez" : $pole = trapez(); break;
+    default: echo "Nieznany typ figury!"; break;
+}
+
+
+function trojkat(){
+    $bok_a = readline("Podaj długość boku a: ");
+    $wysokosc = readline("Podaj wysokość: ");
+
+    return $pole=0.5 * $bok_a * $wysokosc;
+}
+function prostokat(){
+    $bok_a = readline("Podaj długość boku a: ");
+    $bok_b = readline("Podaj długość boku b: ");
+    return $pole = $bok_a * $bok_b;
+}
+function trapez(){
+    $bok_a = readline("Podaj długość górnej podstawy: ");
+    $bok_b = readline("Podaj długość dolnej podstawy: ");
+    $wysokosc = readline("Podaj wysokość: ");
+    return $pole = 0.5 * ($bok_a + $bok_b) * $wysokosc;
+}
+echo "Pole figury $typ_figury wynosi: $pole";
+
 ?>
-
-</body>
-
-</html>

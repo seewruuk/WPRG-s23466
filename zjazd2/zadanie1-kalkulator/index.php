@@ -7,10 +7,10 @@
     <h1>Kalkulator</h1>
     <form method="post" action="kalkulator.php">
         <label for="liczba1">Liczba 1:</label>
-        <input type="number" name="liczba1" id="liczba1" required>
+        <input type="number" name="liczba1" id="liczba1" required />
         <br>
         <label for="liczba2">Liczba 2:</label>
-        <input type="number" name="liczba2" id="liczba2" required>
+        <input type="number" name="liczba2" id="liczba2" required />
         <br>
         <label for="dzialanie">Działanie:</label>
         <select name="dzialanie" id="dzialanie" required>
@@ -20,7 +20,7 @@
             <option value="dzielenie">Dzielenie</option>
         </select>
         <br>
-        <input type="submit" name="submit" value="Oblicz">
+        <input type="submit" name="submit" value="Oblicz"/>
     </form>
 </body>
 </html>

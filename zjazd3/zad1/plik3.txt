@@ -1,0 +1,5 @@
+start
+uno
+dos
+tres
+koniec

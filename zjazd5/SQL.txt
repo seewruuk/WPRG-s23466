@@ -1,0 +1,25 @@
+CREATE DATABASE mojaBaza;
+
+USE mojaBaza;
+
+CREATE TABLE samochody (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  marka VARCHAR(255),
+  model VARCHAR(255),
+  cena DECIMAL(10,2),
+  rok INT,
+  opis VARCHAR(255)
+);
+
+INSERT INTO samochody (marka, model, cena, rok, opis)
+VALUES
+  ('Toyota', 'Corolla', 25000, 2022, 'Nowy model, wyposazony w najnowsze technologie.'),
+  ('Ford', 'Mustang', 40000, 2021, 'Klasyczny amerykanski muscle car.'),
+  ('Volkswagen', 'Golf', 20000, 2020, 'Popularny kompaktowy model z niezawodnym silnikiem.'),
+  ('BMW', 'X5', 60000, 2019, 'Luksusowy SUV z przestronnym wnetrzem.'),
+  ('Mercedes-Benz', 'C-Class', 35000, 2020, 'Elegancki sedan o doskonalym wykonczeniu.'),
+  ('Audi', 'A4', 30000, 2021, 'Komfortowy samochod z zaawansowanymi systemami bezpieczenstwa.'),
+  ('Honda', 'Civic', 22000, 2022, 'Dynamiczny i ekonomiczny samochod.'),
+  ('Chevrolet', 'Camaro', 45000, 2020, 'Sportowy samochod z poteznym silnikiem V8.'),
+  ('Hyundai', 'Tucson', 28000, 2021, 'Przestronny SUV z nowoczesnym designem.'),
+  ('Kia', 'Sportage', 23000, 2022, 'Wygodny crossover z solidnymi osiagami.');
